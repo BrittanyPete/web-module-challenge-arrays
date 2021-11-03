@@ -49,7 +49,7 @@ Use the copy function below to do the following:
 
 
 function copy(array){
-  const flavorsCopy = [...originalFlavors]; 
+  const flavorsCopy = [...array]; 
     //return the copied of the array
   return array;
 }    
@@ -99,8 +99,7 @@ Use the addFlavor function below to do the following:
 
 function addFlavor(array, string){
   array.unshift(string)
-    return originalFlavors;
-  
+  return array;
 }
 console.log('Task3:', addFlavor(originalFlavors, 'Rainbow Sherbert'));
 
@@ -114,10 +113,15 @@ Use the removeLastFlavor function below to do the following:
 
   For example: running removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]
 */
+//one parameter - array 
+//remove the last item in the array - using .pop
+//return the array
 
-function removeLastFlavor(/*your code here*/){
- /*your code here*/
+function removeLastFlavor(array){
+  array.pop();
+  return array;
 }
+console.log('Task 4:', removeLastFlavor(originalFlavors))
 
 
 
