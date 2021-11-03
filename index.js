@@ -44,12 +44,16 @@ Use the copy function below to do the following:
   1. receive an array as a parameter - you will pass in originalFlavors as an argument when the function is invoked.
   2. Return a copy of the received array  
 */
+//one parameter in the function
 
-function copy(/*your code here*/){
-  /*your code here*/
+const copied = [...originalFlavors]; 
+
+function copy(array){
+    //return the copied of the array
+  return copied;
 }    
 
-
+// console.log('Task1:', copy(originalFlavors))
 
 
 
@@ -62,11 +66,19 @@ Confirm that an array is exactly 31 flavors. Your function should accept:
 
 For Example: is31Flavors(originalFlavors) will return true if your code is working properly
 */
+//two parameters - array /total
+//if statement checking if the length is 31 , if so return true, else return false if it's not 31
 
 
-function is31Flavors(/*your code here*/){
- /*your code here*/
+function is31Flavors(array, total){
+  if (originalFlavors.length === 31){
+    return true;
+  } else {
+    return false;
+  }
+
 }
+console.log("Task2:", is31Flavors(originalFlavors, originalFlavors.length))
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Corporate has come to you with an idea for a new flavor: Rainbow Sherbert! They think this will be a game changer. You need to modify the array to include this flavor. 
