@@ -136,9 +136,14 @@ Use the getFlavorByIndex function below to do the following:
   For example: running getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully
 */
 
-function getFlavorByIndex(/*your code here*/){
-  /*your code here*/
+//two parameters - array / number(of the index)
+//add a flavor at the index of 2 by using .splice
+
+function getFlavorByIndex(array, number){
+  const flavor = array[number];
+  return flavor;//flavor
 }
+console.log('Task 5:', getFlavorByIndex(originalFlavors, 2))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
